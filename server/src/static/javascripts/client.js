@@ -1982,14 +1982,6 @@ var ht = class extends T {
     this.fetchData()
   }
   fetchData() {
-    fetch("/weather").then(e => e.json()).then(e => {
-      this.setState({
-        currentTemp: String(Math.round(e.temperature)),
-        description: e.description
-      })
-    }).catch(e => {
-      console.log("fetching weather failed", e)
-    })
   }
   render() {
     return f(W, null, f("p", {
@@ -2366,7 +2358,7 @@ var ge = class extends T {
       initialized: !1,
       activePathname: null,
       items: [{
-        url: "https://www.sublimeforest.com/home",
+        url: "https://www.sublimeforest.com",
         title: "Home"
       },
         {

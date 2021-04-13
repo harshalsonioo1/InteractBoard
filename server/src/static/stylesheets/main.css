@@ -4275,7 +4275,7 @@ menu-mobile details.enter>nav>ul>:nth-child(5), menu-mobile details.exit>nav>ul>
   }
 
   body.dashboard--exit-done .dashboard {
-    display: none
+
   }
 
   body.dashboard--exit .menu-logo {
